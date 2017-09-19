@@ -1,0 +1,24 @@
+<html ng-app="crud_main">
+    <head>
+        <title>Hello Angular</title>
+        <script src="https://code.angularjs.org/1.2.6/angular.js"></script>
+        <script src="js/controllers/crud-controller-index.js"></script>
+        <script src="js/controllers/crud-controller.js"></script>
+        <script src="js/main.js"></script>
+        
+    </head>
+    <body ng-controller="crudController">
+        
+        <div>
+           <label>1º Exemplo</label><br/>
+           <label>================================================================== </label>
+            <br/> <br/>
+                Informe o nome: <input type="text" ng-model="nome">
+                <p>Olá {{ nome }}</p>
+            
+            <label>================================================================== </label>
+            <input type="button" ng-click="addItem()" value="teste"/>
+        </div>
+        <br/>
+    </body>
+</html>
