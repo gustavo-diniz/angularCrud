@@ -10,15 +10,27 @@
     <body ng-controller="crudController">
         
         <div>
-           <label>1º Exemplo</label><br/>
+           <label>1º Exemplo - visao simples do two way data binding</label><br/>
            <label>================================================================== </label>
             <br/> <br/>
                 Informe o nome: <input type="text" ng-model="nome">
                 <p>Olá {{ nome }}</p>
             
             <label>================================================================== </label>
-            <input type="button" ng-click="addItem()" value="teste"/>
         </div>
         <br/>
+        <div>
+           <label>2º Exemplo - chamada de function em controller no angular:</label><br/>
+           <label>================================================================== </label>
+            <br/> <br/>
+                Informe o nome: <input type="text" ng-model="nomeInformado">
+                <input type="button" ng-click="informarNome()" value="consulta Nome"/>
+                <p>Olá {{ resultado }}</p>
+            
+            <label>================================================================== </label>
+        </div>
+        <br/>
+        
+        
     </body>
 </html>
