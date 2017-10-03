@@ -2,6 +2,8 @@
     <head>
         <title>Hello Angular</title>
         <script src="https://code.angularjs.org/1.2.6/angular.js"></script>
+        <script src="js/services/crud-service-consultas.js"></script>
+        <script src="js/services/crud-service.js"></script>
         <script src="js/controllers/crud-controller-index.js"></script>
         <script src="js/controllers/crud-controller.js"></script>
         <script src="js/main.js"></script>
@@ -10,7 +12,8 @@
     <body ng-controller="crudController">
         
         <div>
-           <label>1º Exemplo - visao simples do two way data binding</label><br/>
+           <label>1º Exemplo - visão simples do two way data binding, onde uma alteração na view ocorre no
+            controller e vice-versa.</label><br/>
            <label>================================================================== </label>
             <br/> <br/>
                 Informe o nome: <input type="text" ng-model="nome">
@@ -25,12 +28,22 @@
             <br/> <br/>
                 Informe o nome: <input type="text" ng-model="nomeInformado">
                 <input type="button" ng-click="informarNome()" value="consulta Nome"/>
-                <p>Olá {{ resultado }}</p>
+                <p>{{resultado}}</p>
             
             <label>================================================================== </label>
         </div>
         <br/>
-        
+        <div>
+           <label>3º Exemplo - exemplo de consulta de funcao em controller chamando Servico no angularJS </label><br/>
+           <label>================================================================== </label>
+            <br/> <br/>
+                Informe a idade: <input type="text" ng-model="idade">
+                <input type="button" ng-click="calculaIdade()" value="verifica se é maior de idade"/>
+                <p>{{resultadoMaioridade}}</p>
+            
+            <label>================================================================== </label>
+        </div>
+        <br/>
         
     </body>
 </html>

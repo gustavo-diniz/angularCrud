@@ -1,8 +1,4 @@
 var app = angular.module('crud_main', [        
-        'crud.controllers'        
+        'crud.controller',
+        'crud.service'
 ]);
-
-//,
-//        'logicx.factory',
-//        'logicx.services',
-//        'logicx.diretivas'

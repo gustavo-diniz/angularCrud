@@ -1,3 +1,3 @@
-angular.module('crud.controllers',[
-        'crud.controllers.index',
+angular.module('crud.controller',[
+        'crud.controller.index'
     ]);
