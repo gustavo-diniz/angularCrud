@@ -6,4 +6,3 @@ Serie de exemplos basicos com angularJS, exibindo:
 -exemplo do two way data binding <br/>
 -exemplo de consulta de funcao em controller no angularJS <br/>
 -exemplo de consulta de funcao em controller chamando Servico no angularJS <br/>
--exemplo de consulta de funcao em controller no angularJS <br/>
